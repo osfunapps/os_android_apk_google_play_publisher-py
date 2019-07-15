@@ -5,11 +5,7 @@ import os_android_apk_google_play_publisher.ApkPublisherBp as bp
 #
 # This module meant to upload a new apk release to the Play Store.
 #
-# When using, make sure you aren't using Python3, cause Google's API socket
-# client doesn't work well in it (it's default values aren't good).
-#
-#
-# Also make sure you have the client-secrets.json file. If you don't have it,
+# Make sure you have the client-secrets.json file. If you don't have it,
 # read in the GitHub repo on how to acquire it:
 # https://github.com/osfunapps/os_android_apk_google_play_publisher
 #

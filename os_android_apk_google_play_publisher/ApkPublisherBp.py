@@ -20,6 +20,10 @@ def publish_apk(parsed_flags, package_name, apk_file_path, publish_percent, vers
         client_secrets_dir, parents=[parsed_flags],
         scope='https://www.googleapis.com/auth/androidpublisher')
 
+    # fix google's shitty algorithm of calculating timeout of the http driver to make sure the apk uploaded successfully
+    for key, val in service._http.connections.items():
+        val.sock.settimeout(260)
+
     # Process flags and read their values.
     package_name = flags.package_name
     apk_file = flags.apk_file
@@ -36,6 +40,7 @@ def publish_apk(parsed_flags, package_name, apk_file_path, publish_percent, vers
 
         if upload == 'true':
             print("uploading...")
+
             apk_response = service.edits().apks().upload(
                 editId=edit_id, packageName=package_name, media_body=apk_file).execute()
             version_code = apk_response['versionCode']

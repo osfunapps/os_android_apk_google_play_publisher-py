@@ -5,8 +5,6 @@ This module will publish/update an Android apk programmatically (dynamically), f
 
 ## Installation
 
-Make sure you're using python 2.x.  
-
 Install via pip:
 
     pip install os_android_apk_google_play_publisher
