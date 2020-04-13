@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='os_android_apk_google_play_publisher',
     packages=['os_android_apk_google_play_publisher'],
-    version='1.04',  # Start with a small number and increase it with every change you make
+    version='1.05',  # Start with a small number and increase it with every change you make
     license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description='This module will publish an apk programmatically (dynamically), without Android Studio, to Google\'s Play Store, with a specific percent.',  # Give a short description about your library
     author='Oz Shabat',  # Type in your name

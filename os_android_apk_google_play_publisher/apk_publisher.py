@@ -1,4 +1,4 @@
-import os_android_apk_google_play_publisher.ApkPublisherBp as bp
+import os_android_apk_google_play_publisher.modules.apk_publisher_boilerplate as bp
 
 
 ################################################################################

@@ -12,7 +12,7 @@ Install via pip:
 ## Quick Usage       
 From Python:
     
-    import os_android_apk_google_play_publisher.ApkPublisher as ap
+    import os_android_apk_google_play_publisher.apk_publisher as ap
     
     ap.publish_apk('com.my.packagename',
                    '/path/to/my.apk',
